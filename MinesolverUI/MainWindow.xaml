@@ -23,9 +23,9 @@
                     <ColumnDefinition Width="auto"/>
                     <ColumnDefinition Width="auto"/>
                 </Grid.ColumnDefinitions>
-                <TextBox Grid.Column="0" />
+                <TextBox Grid.Column="0" x:Name="txtScreenWidth"/>
                 <TextBlock Text="x" Grid.Column="1" VerticalAlignment="Center"/>
-                <TextBox Grid.Column="2" />
+                <TextBox Grid.Column="2" x:Name="txtScreenHeight"/>
             </Grid>
             <TextBlock Text="Board Size" FontSize="16"/>
             <Grid ColumnSpacing="12">
@@ -34,22 +34,21 @@
                     <ColumnDefinition Width="auto"/>
                     <ColumnDefinition Width="auto"/>
                 </Grid.ColumnDefinitions>
-                <TextBox Grid.Column="0" />
+                <TextBox Grid.Column="0" x:Name="txtBoardWidth"/>
                 <TextBlock Text="x" Grid.Column="1" VerticalAlignment="Center"/>
-                <TextBox Grid.Column="2" />
+                <TextBox Grid.Column="2" x:Name="txtBoardHeight"/>
             </Grid>
             <TextBlock Text="First Square Position" FontSize="16"/>
             <Grid ColumnSpacing="12">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="auto"/>
-                    <ColumnDefinition Width="auto"/>
-                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
                 </Grid.ColumnDefinitions>
-                <TextBox Grid.Column="0" />
-                <TextBlock Text="x" Grid.Column="1" VerticalAlignment="Center"/>
-                <TextBox Grid.Column="2" />
+                <TextBox Grid.Column="0" x:Name="txtFirstSquarePositionX"/>
+                <TextBox Grid.Column="2" x:Name="txtFirstSquarePositionY"/>
             </Grid>
-            <Button Content="Start" HorizontalAlignment="Center"/>
+            <TextBox Header="Square Spacing" x:Name="txtSquareSpacing"/>
+            <Button Content="Start" HorizontalAlignment="Center" Click="Start_click"/>
         </StackPanel>
     </Grid>
 </Window>

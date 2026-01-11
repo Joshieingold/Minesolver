@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MinesolverLibrary
 {
-    struct Point
+    public struct Point
     {
         private int _x;
         private int _y;
@@ -19,6 +19,16 @@ namespace MinesolverLibrary
         {
             get { return _y; }
             set { if (value < 0) { _y = 0; } else { _y = value; } }
+        }
+        public Point(int inX, int inY)
+        {
+            X = inX;
+            Y = inY;
+        }
+        public override string ToString()
+        {
+            return $"{X}, {Y}";
+
         }
     }
 }

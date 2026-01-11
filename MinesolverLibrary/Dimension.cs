@@ -25,5 +25,10 @@ namespace MinesolverLibrary
             Width = inWidth;
             Height = inHeight;
         }
+        public override string ToString()
+        {
+            return $"{Width}x{Height}";
+            
+        }
     }
 }
