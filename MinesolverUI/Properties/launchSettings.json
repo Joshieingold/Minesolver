@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "MinesolverUI (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "MinesolverUI (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="MinesolverUI.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MinesolverUI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Minesolver">
+
+    <Window.SystemBackdrop>
+        <MicaBackdrop/>
+    </Window.SystemBackdrop>
+    <Grid>
+        <StackPanel Spacing="12" VerticalAlignment="Stretch" HorizontalAlignment="Center">
+            <TextBlock Text="Minesolver" FontSize="32" FontWeight="Bold" />
+
+            <TextBlock Text="Screen Size" FontSize="16"/>
+            <Grid ColumnSpacing="12">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBox Grid.Column="0" />
+                <TextBlock Text="x" Grid.Column="1" VerticalAlignment="Center"/>
+                <TextBox Grid.Column="2" />
+            </Grid>
+            <TextBlock Text="Board Size" FontSize="16"/>
+            <Grid ColumnSpacing="12">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBox Grid.Column="0" />
+                <TextBlock Text="x" Grid.Column="1" VerticalAlignment="Center"/>
+                <TextBox Grid.Column="2" />
+            </Grid>
+            <TextBlock Text="First Square Position" FontSize="16"/>
+            <Grid ColumnSpacing="12">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBox Grid.Column="0" />
+                <TextBlock Text="x" Grid.Column="1" VerticalAlignment="Center"/>
+                <TextBox Grid.Column="2" />
+            </Grid>
+            <Button Content="Start" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Window>
+<!--
+            <ToggleSwitch Header="Enable notifications" IsOn="{Binding NotificationsEnabled, Mode=TwoWay}" />
+            <ComboBox Header="Theme" SelectedItem="{Binding SelectedTheme, Mode=TwoWay}">
+                <x:String>System</x:String>
+                <x:String>Light</x:String>
+                <x:String>Dark</x:String>
+            </ComboBox>
+-->
