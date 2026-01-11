@@ -52,8 +52,15 @@ namespace MinesolverUI
 
         private void Start_click(object sender, RoutedEventArgs e)
         {
-            CurrentConfig = GetConfig();
-            Console.WriteLine(CurrentConfig.ToString());
+            try
+            {
+                CurrentConfig = GetConfig();
+                Console.WriteLine(CurrentConfig.ToString());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Failed to generate config\n", ex);
+            }
         }
     }
 }
